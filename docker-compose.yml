@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
   gradle: &gradle
-    image: gradle:5.2.1-alpine
+    image: gradle:5.2.1
     working_dir: /app
     command: gradle -t build
     volumes:
