@@ -4,10 +4,6 @@ services:
   gradle: &gradle
     image: gradle:5.2.1-alpine
     working_dir: /app
-    entrypoint: gradle
+    command: gradle -t build
     volumes:
       - .:/app
-
-  build: &build
-    <<: *gradle
-    command: -t build
