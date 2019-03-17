@@ -1,0 +1,11 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+}
+
+plugins {
+	id 'java'
+}
+
+sourceCompatibility = 1.8

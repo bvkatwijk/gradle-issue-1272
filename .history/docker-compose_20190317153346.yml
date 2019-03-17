@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  # Java core container for excel and word file processing
+  gradle: &gradle
+    image: anapsix/alpine-java:9_jdk
+    working_dir: /app
+    entrypoint: gradle
+    volumes:
+      - .:/app
+
+  gradlew: &gradlew
+    <<: *gradle
+    entrypoint: ./gradlew
+
+  build: &build
+    <<: *gradlew
+    command: -t build
