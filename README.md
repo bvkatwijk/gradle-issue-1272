@@ -1,6 +1,5 @@
 # gradle-issue-1272
-
-Run `docker-compose up gradle`, then change the content of `./src/main/java/org/example/Example.java`
+Run `docker-compose up gradle`, then change the content of `./src/main/java/org/example/Hello.java`
 
 ### Expected result
 The running gradle build task triggers a rebuild
