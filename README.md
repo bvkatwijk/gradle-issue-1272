@@ -1,5 +1,7 @@
 # gradle-issue-1272
-Run `docker-compose up gradle`, then change the content of `./src/main/java/org/example/Hello.java`
+This repository provides a quick setup showcasing [Gradle Issue 1272](https://github.com/gradle/gradle/issues/1272)
+
+Clone the repo, run `docker-compose up gradle`, then change the content of `./src/main/java/org/example/Hello.java`.
 
 ## Expected result
 The running gradle build task triggers a rebuild
